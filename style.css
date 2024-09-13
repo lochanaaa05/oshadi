@@ -1,0 +1,828 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(18, 114, 162);
+    padding: 20px;
+    position: relative;
+    height: 100px;
+}
+.ml {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.ml img {
+    height: 90px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.mh {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    color: white;
+}
+.mh .h1 { 
+    margin: 0;
+    font-size: 40px;
+}
+.mh .p1 {
+    margin: 0;
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #004080;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 60px;
+    border-radius: 5px;
+    background-color: #1860dc;
+}
+nav a:hover {
+    background-color: #7cb2e4;
+    color: white;
+}
+.search-bar {
+    position: absolute;
+    display: grid;
+}
+.search {
+    float: right;
+    margin-top: 100px;
+    margin-left: 1450px;
+}
+.search input {
+    padding: 6px;
+    width: 68%;
+    border: none;
+}
+.search button {
+    float: right;
+    margin-top: -28px;
+    padding: 3px 10px;
+    padding-top: 3.1px;
+    margin-right: 16px;
+    padding-bottom: 4px;
+    border-radius: 0px;
+    background: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.search button:hover {
+    background: gray;
+}
+/*Home*/
+.on {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.centered {
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    color: green;
+    font-size: 100px;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50% -50%);
+    letter-spacing: 10px;
+    border-right: 1px white;
+    width: 68.5%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    45% { border-color: transparent }
+}
+@keyframes typing {
+    from { width: 0}
+}
+.section1 {
+    background-color: #1E90FF;
+}
+.section1 h1 {
+    font-size: 2rem;
+    position: relative;
+    color: #252839;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    -webkit-text-stroke: black;
+}
+.section1 h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: black;
+    border-right: 2px solid Green;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%
+    {
+        width: 100%;
+    }
+    70%, 90%
+    {
+        width: 50%;
+    }
+}
+.section2 {
+    background-color: lightseagreen;
+}
+.section2 h1 {
+    font-size: 2rem;
+    position: relative;
+    color: #252839;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    -webkit-text-stroke: black;
+}
+.section2 h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: black;
+    border-right: 2px solid Green;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%
+    {
+        width: 100%;
+    }
+    70%, 90%
+    {
+        width: 50%;
+    }
+}
+.section3 {
+    background-color: rgb(180, 253, 222);
+}
+.section3 h1 {
+    font-size: 2rem;
+    position: relative;
+    color:#252839;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    -webkit-text-stroke: black;
+}
+.section3 h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: black;
+    border-right: 2px solid Green;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%
+    {
+        width: 100%;
+    }
+    70%, 90%
+    {
+        width: 50%;
+    }
+}
+/*Home, About us, Laboratory, Imaging*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+/*OPD, Ambulance*/
+.container1 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+/*Home, Ambulance*/
+.list {
+    padding-left: 100px;
+}
+/*All*/
+.footer {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    padding-inline: 10px;
+}
+.logo {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    border-radius: 50%;
+}
+.content {
+    padding-left: 20px;
+    padding-right: 400px;
+    word-spacing: 0.5px;
+}
+.content p {
+    text-align: justify;
+}
+.ib {
+    background-color: #7cb2e4;
+    color: #333;
+    margin-top: 20px;
+    width: 44.64%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.ib img {
+    border-radius: 50.5%;
+}
+.ip {
+    padding-left: 50px;
+}
+footer ul {
+    list-style-type: none;
+}
+.footer h1 {
+    text-align: center;
+}
+div.footer {
+    overflow: hidden;
+}
+div.footer div {
+    float: left;
+    padding-inline: 20px;
+}
+.quick {
+    margin-right: 125px;
+    margin-left: 102px;
+    text-decoration: none;
+} 
+footer .button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+footer .button:hover {
+    background-color: white;
+}
+/*About*/
+.about {
+    background-color: #1e507f;
+    color: black;
+    margin-top: 20px;
+    margin-left: 30px; 
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 30px;
+}
+.ia {
+    padding-left: 977.5px;
+}
+h2 {
+    text-align: center;
+}
+/*About, Laboratory, Imaging, OPD*/
+.mp {
+    padding-left: 350px;
+}
+/*About*/
+.flex-container {
+    display: flex;
+}
+.flex-container > div {
+    margin: 30px;
+    padding: 50px;
+}
+table {
+    width: 96%;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+th,td {
+    border: 1px solid black;
+    padding: 25px;
+}
+th {
+    text-align: center;
+    background-color: aliceblue;
+}
+tfoot {
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+}
+.aim {
+    display: flex;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+/*About, Services, Laboratory, Imaging, OPD, Other, Ambulance, Online Bill Payment, Patient Registration, Doctors, Consulting Reservation, Pharmacy*/
+h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-left: 30px;
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;  
+}
+h3:before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: lightseagreen;
+    position: absolute;
+    left: 0px;
+    top: 0px;  
+    animation: animate 10s forwards;
+    border-right: 5px solid #262626;
+}
+@keyframes animate {
+    0% {
+        width: 100%;
+        z-index: 1;
+    }
+    50% {
+        width: 0%;
+        z-index: 1;
+    }
+    51% {
+        width: 0%;
+        z-index: -1;
+    }
+    100% {
+        width: 100%;
+        z-index: -1;
+    }
+}
+/*All*/
+p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*Services*/
+.service-flex {
+    display: inline-block;
+}
+.cards {
+    width: 25%;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 2px 1px 10px black;
+    background-color: rgb(255, 255, 255);
+}
+.cards:hover {
+    box-shadow: 2px 10px 20px black;
+    transform: scale(1.03);
+}
+/*Services, Ambulance*/
+.image img {
+    display: block;
+    width: 100%;
+    height: 17rem;
+    object-fit: contain;
+}
+/*Services*/
+.title {
+    text-align: center;
+    font-size: 70%;
+}
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+.center-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.center-link a {
+    text-decoration: none;
+    font-size: 20px;
+}
+/*Laboratory*/
+hr {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-width: 2px;
+}
+.lb {
+    display: flex;
+    gap: 150px;
+    padding: 90px;
+}
+.lbi {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+.lbi:hover {
+    transform: scale(1.03);
+}
+.lbi h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    word-spacing: 20px;
+}
+.il {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+/*Ambulance*/
+.ai {
+    padding-left: 350px;
+}
+.card {
+    width: 15%;
+    margin: auto;
+    background-color: #004080;
+    margin-bottom: 60px;
+}
+.topic {
+    text-align: center;
+    font-size: 70%;
+    padding-bottom: 10px; 
+}
+/*Other*/ 
+.olist {
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+/*Online Bill Payment, Patient Registration, Consulting Reservation, Pharmacy*/
+.paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 25px;
+}
+.paper form {
+    width: 55%;
+    padding: 30px;
+    background-color: rgba(198, 199, 200, 0.931);
+    border-radius: 10px;
+}
+form .row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.row .column {
+    flex: 1 1 1px;
+}
+.column .input-box {
+    margin: 15px 0;
+}
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+.input-box input {
+    width: 98%;
+    padding: 6px 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+/*Online Bill Payment, patient Registration, Consulting Reservation*/
+.column .flex {
+    display: flex;
+    gap: 150px;
+}
+.flex .input-box {
+    width: 40%;
+    margin-top: 15px;
+}
+/*Online Bill Payment*/
+.input-box img {
+    margin-top: 8px;
+}
+/*Patient Registration*/
+.checkbox-group {
+    margin: 15px 0;
+}
+.checkbox-group label {
+    margin-right: 25px;
+    font-weight: normal;
+}
+/*Online Bill Payment, Patient Registration, Consulting Reservation, Pharmacy*/
+form .button {
+    background-color: rgb(84, 193, 84);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 575px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form .button:hover {
+    background-color: rgb(233, 72, 54);
+}
+/*Consulting Reservation, Pharmacy*/
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*Doctors*/
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px;
+}
+.doctor-card {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+.doctor-card img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.doctor-card p1 {
+    color: rgba(227, 28, 28, 0.892);
+    text-align: center;
+}
+.doctor-card  p {
+    color: rgb(36, 33, 33);
+    text-align: center;
+}
+/*Pharmacy*/
+.quantity {
+    width: 40%;
+}
+.why img {
+    margin-left: 650px;
+    margin-bottom: 20px;
+}
+.why p {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 60px;
+}
+section {
+    background-color: #1E90FF;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    header {
+        display: block;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .ml img {
+        height: 50px;
+    }
+    .mh .h1 {
+        font-size: 24px;
+    }
+    .mh .p1 {
+        font-size: 16px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .search-bar {
+        position: static;
+        margin-top: -1px;
+    }
+    .search {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .search input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .search button {
+        margin: 0;
+        padding: 4px;
+    }
+    .centered {
+        font-size: 2rem;
+    }
+    .section1, .section2, .section3 {
+        padding: 20px 10px;
+    }
+    .section1 h1, .section2 h1, .section3 h1 {
+        font-size: 1.5rem;
+    }
+    .container, .container1 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .list {
+        padding-left: 20px;
+    }
+    .footer {
+        display: block;
+        padding: 10px;
+    }
+    .footer content {
+        padding: 10px;
+    }
+    .ib {
+        flex-direction: column;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .quick {
+        margin: 0;
+    }
+    .about {
+        flex-direction: column;
+        font-size: 24px;
+        padding: 20px;
+    }
+    .mp, .ai {
+        padding-left: 0;
+    }
+    table {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    th, td {
+        padding: 15px;
+    }
+    .aim {
+        flex-direction: column;
+        margin: 10px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cards, .lbi, .doctor-card {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .service-flex, .lb {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctor-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .paper form {
+        width: 100%;
+        padding: 10px;
+    }
+    form .button {
+        margin-left: 25px;
+    }
+    form .input-box {
+        width: 98%;
+    }
+    .flex .input-box {
+        width: 28%;
+    }
+    .quantity {
+        width: 100%;
+    }
+    .why p {
+        margin: 20px;
+    }
+    .why img {
+        margin-left: 0;
+    }
+    hr {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+    footer .button {
+        width: 10%;
+        margin: 10px auto;
+    }
+}
